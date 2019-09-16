@@ -1,7 +1,7 @@
 Package: Rhtslib
 Type: Package
 Title: HTSlib high-throughput sequencing library as an R package
-Version: 1.16.1
+Version: 1.16.2
 Authors@R:
     c(person("Nathaniel", "Hayden", email="nhayden@fredhutch.org",
         role=c("led", "aut")),
@@ -21,6 +21,7 @@ Copyright: Unless otherwise noted in the file, all files outside
 Imports: zlibbioc
 LinkingTo: zlibbioc
 Suggests: BiocStyle, knitr
+SystemRequirements: libbz2 & liblzma (with header files)
 StagedInstall: no
 VignetteBuilder: knitr
 URL: https://github.com/Bioconductor/Rhtslib, http://www.htslib.org/
