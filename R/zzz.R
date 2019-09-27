@@ -47,7 +47,7 @@ pkgconfig <- function(opt=c("PKG_LIBS", "PKG_CPPFLAGS"))
         }
     } else {
         include_dir <- system.file("include", package="Rhtslib")
-        config <- sprintf('-I"%s"', include_dir)
+        config <- sprintf('-D_FILE_OFFSET_BITS=64 -I"%s"', include_dir)
     }
     cat(config)
 }
